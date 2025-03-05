@@ -4,10 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo-mfs Home</title>
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- daisy ui cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwindcss cdn link  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheet link  -->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <main>
-      <h1>Payoo mfs Home</h1>
+      <!-- phone model layout  -->
+      <div class="flex justify-center items-center min-h-screen box-border">
+        <div class="mockup-phone border-primary h-[700px]">
+          <div class="mockup-phone-camera"></div>
+          <div class="mockup-phone-display bg-white h-full">
+            <!-- section:: back Bar(logout)-->
+            <section class="flex items-center mt-14">
+              <div class="flex flex-grow justify-center items-center">
+                <figure>
+                  <img src="./images/Group.png" alt="logo" class="size-10" />
+                </figure>
+                <div class="stats">
+                  <div class="stat">
+                    <div class="stat-value">$9400</div>
+                    <div class="stat-desc">Available Balance</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- logout button  -->
+              <div class="flex items-center justify-center me-5">
+                <button class="btn btn-outline">
+                  <i
+                    class="fa-solid fa-arrow-right-from-bracket rotate-180"
+                  ></i>
+                  LogOut
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
