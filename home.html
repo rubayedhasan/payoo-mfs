@@ -31,10 +31,10 @@
         <div class="mockup-phone border-primary h-[700px]">
           <div class="mockup-phone-camera"></div>
           <div
-            class="mockup-phone-display bg-white overflow-y-scroll h-full pt-14 pe-5 ps-5"
+            class="mockup-phone-display bg-white overflow-y-scroll h-full ps-5"
           >
             <!-- section:: back Bar(logout)-->
-            <section class="flex items-center">
+            <section class="flex items-center pt-14 pe-5 ps-5">
               <div class="flex flex-grow items-center">
                 <figure>
                   <img src="./images/Group.png" alt="logo" class="size-10" />
@@ -62,7 +62,7 @@
             <div class="divider"></div>
 
             <!-- section::user-actions -->
-            <section id="user-actions">
+            <section id="user-actions" class="pe-5 ps-5">
               <!-- user-actions section title description   -->
               <hgroup class="mt-8 mb-6">
                 <!--section title  -->
@@ -189,6 +189,126 @@
                       Transactions
                     </h2>
                   </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- section::divider  -->
+            <div class="divider"></div>
+
+            <!-- section::latest-payment -->
+            <section
+              id="latest-payment"
+              class="bg-slate-100 pt-6 pe-5 ps-5 rounded-md pb-10"
+            >
+              <!-- head  -->
+              <div class="flex justify-between">
+                <h2 class="font-semibold text-lg text-opacity-90">
+                  Latest Payment
+                </h2>
+                <button
+                  type="button"
+                  class="cursor-pointer text-sm text-opacity-50"
+                >
+                  View All
+                </button>
+              </div>
+
+              <div class="payment-notify-cards space-y-3 mt-4">
+                <!-- 1st notification card  -->
+                <div
+                  class="card-parent flex justify-between items-center bg-white p-3 rounded"
+                >
+                  <div class="flex gap-5 items-center">
+                    <!-- notify icon  -->
+                    <div class="avatar avatar-placeholder">
+                      <div class="bg-slate-300 p-1.5 rounded-full">
+                    <img src="./images/wallet1.png" alt="wallet" class="w-full object-scale-down">
+                      </div>
+                  </div>
+                  
+                  <!-- payment details  -->
+                   <div>
+                    <h4 class="font-semibold text-opacity-70">Electricity Bill</h4>
+                    <p class="text-xs text-opacity-70">Today 01:44 AM</p>
+                   </div>
+                </div>
+
+                <!-- detals button  -->
+                <div>
+                  <button type="button" class="cursor-pointer"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+              </div>
+                <!-- 2nd notification card  -->
+                <div
+                  class="card-parent flex justify-between items-center bg-white p-3 rounded"
+                >
+                  <div class="flex gap-5 items-center">
+                    <!-- notify icon  -->
+                    <div class="avatar avatar-placeholder">
+                      <div class="bg-slate-300 p-1.5 rounded-full">
+                    <img src="./images/wallet1.png" alt="wallet" class="w-full object-scale-down">
+                      </div>
+                  </div>
+                  
+                  <!-- payment details  -->
+                   <div>
+                    <h4 class="font-semibold text-opacity-70">Bank Deposit</h4>
+                    <p class="text-xs text-opacity-70">Today 01:44 AM</p>
+                   </div>
+                </div>
+
+                <!-- detals button  -->
+                <div>
+                  <button type="button" class="cursor-pointer"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+              </div>
+                <!-- 3rd notification card  -->
+                <div
+                  class="card-parent flex justify-between items-center bg-white p-3 rounded"
+                >
+                  <div class="flex gap-5 items-center">
+                    <!-- notify icon  -->
+                    <div class="avatar avatar-placeholder">
+                      <div class="bg-slate-300 p-1.5 rounded-full">
+                    <img src="./images/wallet1.png" alt="wallet" class="w-full object-scale-down">
+                      </div>
+                  </div>
+                  
+                  <!-- payment details  -->
+                   <div>
+                    <h4 class="font-semibold text-opacity-70">Mobile Recharge</h4>
+                    <p class="text-xs text-opacity-70">Today 01:44 AM</p>
+                   </div>
+                </div>
+
+                <!-- detals button  -->
+                <div>
+                  <button type="button" class="cursor-pointer"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+              </div>
+                <!-- 4th notification card  -->
+                <div
+                  class="card-parent flex justify-between items-center bg-white p-3 rounded"
+                >
+                  <div class="flex gap-5 items-center">
+                    <!-- notify icon  -->
+                    <div class="avatar avatar-placeholder">
+                      <div class="bg-slate-300 p-1.5 rounded-full">
+                    <img src="./images/wallet1.png" alt="wallet" class="w-full object-scale-down">
+                      </div>
+                  </div>
+                  
+                  <!-- payment details  -->
+                   <div>
+                    <h4 class="font-semibold text-opacity-70">Gas Bill</h4>
+                    <p class="text-xs text-opacity-70">Today 01:44 AM</p>
+                   </div>
+                </div>
+
+                <!-- detals button  -->
+                <div>
+                  <button type="button" class="cursor-pointer"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                 </div>
               </div>
             </section>
