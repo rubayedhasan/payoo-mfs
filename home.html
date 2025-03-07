@@ -196,6 +196,56 @@
             <!-- section::divider  -->
             <div class="divider"></div>
 
+            <!-- section::action-forms -->
+            <section id="action-forms" class="mb-10">
+              <!-- add-money form -->
+               <div class="bg-slate-100 rounded-md p-5">
+                <h3 class="mb-4 font-semibold text-lg text-opacity-90">Add Money</h3>
+                <form class="fieldset p-5 bg-white rounded-lg">
+                  <label class="fieldset-label">Select A Bank</label>
+                    <select class="select">
+                      <option disabled selected>Select A Bank</option>
+                      <option>Sonali Bank PLC</option>
+                      <option>Islami Bank PLC</option>
+                      <option>Rupali Bank PLC</option>
+                    </select>
+                  <label class="fieldset-label">Bank Account Number</label>
+                  <input
+                    type="text"
+                    name=""
+                    autocomplete="off"
+                    id="input-account-number"
+                    class="input"
+                    placeholder="Enter 11 digit account number"
+                  />
+                  <label class="fieldset-label">Amount to Add</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="input-add-amount"
+                    class="input"
+                    placeholder="Add Amount to withdraw"
+                  />
+                  <label class="fieldset-label">Pin Number</label>
+                    <input
+                      type="password"
+                      name=""
+                      autocomplete="off"
+                      id="input-account-pin"
+                      class="input"
+                      placeholder="Enter 4 digit pin number"
+                    />
+                  <button
+                    type="submit"
+                    id="btn-add-money"
+                    class="btn btn-neutral mt-4"
+                  >
+                    Add Money
+                  </button>
+                </form>
+               </div>
+            </section>
+
             <!-- section::latest-payment -->
             <section
               id="latest-payment"
