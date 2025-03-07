@@ -41,7 +41,8 @@
                 </figure>
                 <div class="stats">
                   <div class="stat p-3">
-                    <div class="stat-value">$9400</div>
+                    <div class="stat-value">$<span id="current-balance">9400</span>
+                    </div>
                     <div class="stat-desc">Available Balance</div>
                   </div>
                 </div>
@@ -77,7 +78,7 @@
               <!-- user-actions cards -->
               <div class="action-cards grid grid-cols-3 gap-4">
                 <!-- 1st action card:: add money  -->
-                <div
+                  <div id="user-action-add-money"
                   class="card border border-[#080808] border-opacity-10 hover:bg-[#0874F2]/5 hover:border-[#0874F2] hover:border-opacity-100 transition-all shadow-sm py-4"
                 >
                   <figure>
@@ -199,7 +200,7 @@
             <!-- section::action-forms -->
             <section id="action-forms" class="mb-10">
               <!-- add-money form -->
-               <div class="bg-slate-100 rounded-md p-5">
+               <div id="add-money-action-form" class="bg-slate-100 rounded-md p-5">
                 <h3 class="mb-4 font-semibold text-lg text-opacity-90">Add Money</h3>
                 <form class="fieldset p-5 bg-white rounded-lg">
                   <label class="fieldset-label">Select A Bank</label>
