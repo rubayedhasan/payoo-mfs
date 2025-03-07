@@ -30,7 +30,9 @@
       <div class="flex justify-center items-center min-h-screen box-border">
         <div class="mockup-phone border-primary h-[700px]">
           <div class="mockup-phone-camera"></div>
-          <div class="mockup-phone-display bg-white h-full pt-14 pe-5 ps-5">
+          <div
+            class="mockup-phone-display bg-white overflow-y-scroll h-full pt-14 pe-5 ps-5"
+          >
             <!-- section:: back Bar(logout)-->
             <section class="flex items-center">
               <div class="flex flex-grow items-center">
@@ -64,15 +66,131 @@
               <!-- user-actions section title description   -->
               <hgroup class="mt-8 mb-6">
                 <!--section title  -->
-                <h2 class="text-2xl leading-7 text-[#080808]">
-                  🔥 Welcome to Payooo!
-                </h2>
+                <h2 class="text-2xl leading-7">🔥 Welcome to Payooo!</h2>
                 <!-- description  -->
-                <p class="leading-6 text-[#080808] text-opacity-50 mt-3">
+                <p class="leading-6 text-opacity-50 mt-3">
                   Enjoy easy and convenient financial services with us. Cashout
                   charge is low and
                 </p>
               </hgroup>
+
+              <!-- user-actions cards -->
+              <div class="action-cards grid grid-cols-3 gap-4">
+                <!-- 1st action card:: add money  -->
+                <div
+                  class="card border border-[#080808] border-opacity-10 hover:bg-[#0874F2]/5 hover:border-[#0874F2] hover:border-opacity-100 transition-all shadow-sm py-4"
+                >
+                  <figure>
+                    <img
+                      src="./images/wallet1.png"
+                      alt="add money wallet icons"
+                      class="size-8"
+                    />
+                  </figure>
+                  <div class="card-body p-0 pt-3 items-center text-center">
+                    <h2
+                      class="card-title text-sm text-opacity-70 hover:text-[#0874F2] hover:text-opacity-100"
+                    >
+                      Add Money
+                    </h2>
+                  </div>
+                </div>
+                <!-- 2nd action card:: cash out  -->
+                <div
+                  class="card border border-[#080808] border-opacity-10 hover:bg-[#0874F2]/5 hover:border-[#0874F2] hover:border-opacity-100 transition-all shadow-sm py-4"
+                >
+                  <figure>
+                    <img
+                      src="./images/send1.png"
+                      alt="cash out icons"
+                      class="size-8"
+                    />
+                  </figure>
+                  <div class="card-body p-0 pt-3 items-center text-center">
+                    <h2
+                      class="card-title text-sm text-opacity-70 hover:text-[#0874F2] hover:text-opacity-100"
+                    >
+                      Cash Out
+                    </h2>
+                  </div>
+                </div>
+                <!-- 3rd action card:: transfer money  -->
+                <div
+                  class="card border border-[#080808] border-opacity-10 hover:bg-[#0874F2]/5 hover:border-[#0874F2] hover:border-opacity-100 transition-all shadow-sm py-4"
+                >
+                  <figure>
+                    <img
+                      src="./images/money1.png"
+                      alt="transfer money icons"
+                      class="size-8"
+                    />
+                  </figure>
+                  <div class="card-body p-0 pt-3 items-center text-center">
+                    <h2
+                      class="card-title text-sm text-opacity-70 hover:text-[#0874F2] hover:text-opacity-100"
+                    >
+                      Transfer Money
+                    </h2>
+                  </div>
+                </div>
+                <!-- 4th action card:: get bonus  -->
+                <div
+                  class="card border border-[#080808] border-opacity-10 hover:bg-[#0874F2]/5 hover:border-[#0874F2] hover:border-opacity-100 transition-all shadow-sm py-4"
+                >
+                  <figure>
+                    <img
+                      src="./images/bonus1.png"
+                      alt="bonus icons"
+                      class="size-8"
+                    />
+                  </figure>
+                  <div class="card-body p-0 pt-3 items-center text-center">
+                    <h2
+                      class="card-title text-sm text-opacity-70 hover:text-[#0874F2] hover:text-opacity-100"
+                    >
+                      Get Bonus
+                    </h2>
+                  </div>
+                </div>
+                <!-- 5th action card:: pay bill  -->
+                <div
+                  class="card border border-[#080808] border-opacity-10 hover:bg-[#0874F2]/5 hover:border-[#0874F2] hover:border-opacity-100 transition-all shadow-sm py-4"
+                >
+                  <figure>
+                    <img
+                      src="./images/purse1.png"
+                      alt="pay bill purse icons"
+                      class="size-8"
+                    />
+                  </figure>
+                  <div class="card-body p-0 pt-3 items-center text-center">
+                    <h2
+                      class="card-title text-sm text-opacity-70 hover:text-[#0874F2] hover:text-opacity-100"
+                    >
+                      Pay Bill
+                    </h2>
+                  </div>
+                </div>
+                <!-- 6th action card:: Transactions  -->
+                <div
+                  class="card border border-[#080808] border-opacity-10 hover:bg-[#0874F2]/5 hover:border-[#0874F2] hover:border-opacity-100 transition-all shadow-sm py-4"
+                >
+                  <figure>
+                    <img
+                      src="./images/transaction1.png"
+                      alt="transactions icons"
+                      class="size-8"
+                    />
+                  </figure>
+                  <div class="card-body p-0 pt-3 items-center text-center">
+                    <h2
+                      class="card-title text-sm text-opacity-70 hover:text-[#0874F2] hover:text-opacity-100"
+                    >
+                      Transactions
+                    </h2>
+                  </div>
+                </div>
+              </div>
             </section>
           </div>
         </div>
