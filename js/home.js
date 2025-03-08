@@ -229,3 +229,50 @@ document
     hideElement("get-bonus-action-form");
     hideElement("pay-bill-action-form");
   });
+
+// user action:: transfer money event handeler
+document
+  .getElementById("user-action-transfer-money")
+  .addEventListener("click", function (event) {
+    showElement("transfer-money-action-form");
+
+    hideElement("add-money-action-form");
+    hideElement("cashout-action-form");
+    hideElement("get-bonus-action-form");
+    hideElement("pay-bill-action-form");
+  });
+
+// user action:: get bonus event handeler
+document
+  .getElementById("user-action-get-bonus")
+  .addEventListener("click", function (event) {
+    showElement("get-bonus-action-form");
+
+    hideElement("add-money-action-form");
+    hideElement("cashout-action-form");
+    hideElement("transfer-money-action-form");
+    hideElement("pay-bill-action-form");
+  });
+
+// user action:: pay bill event handeler
+document
+  .getElementById("user-action-pay-bill")
+  .addEventListener("click", function (event) {
+    showElement("pay-bill-action-form");
+
+    hideElement("add-money-action-form");
+    hideElement("cashout-action-form");
+    hideElement("transfer-money-action-form");
+    hideElement("get-bonus-action-form");
+  });
+
+// user action:: transactions event handeler
+document
+  .getElementById("user-action-transactions")
+  .addEventListener("click", function (event) {
+    hideElement("cashout-action-form");
+    hideElement("add-money-action-form");
+    hideElement("transfer-money-action-form");
+    hideElement("get-bonus-action-form");
+    hideElement("pay-bill-action-form");
+  });
