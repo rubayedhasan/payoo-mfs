@@ -3,13 +3,6 @@ document.getElementById("btn-logout").addEventListener("click", function () {
   window.location.href = "./index.html";
 });
 
-// user action:: add money event handeler
-document
-  .getElementById("user-action-add-money")
-  .addEventListener("click", function (e) {
-    console.log("add");
-  });
-
 /*
 -------------------common function to get Element value---------
 */
