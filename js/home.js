@@ -198,3 +198,34 @@ document
       alert("Wrong Account Number or Pin Number. Try Again Later.");
     }
   });
+
+/*------- common function for use action event handeler ----------*/
+function hideElement(targetElementId) {
+  document.getElementById(targetElementId).classList.add("hidden");
+}
+
+function showElement(targetElementId) {
+  document.getElementById(targetElementId).classList.remove("hidden");
+}
+
+// user action:: add money event handeler
+document
+  .getElementById("user-action-add-money")
+  .addEventListener("click", function (event) {
+    showElement("add-money-action-form");
+    hideElement("cashout-action-form");
+    hideElement("transfer-money-action-form");
+    hideElement("get-bonus-action-form");
+    hideElement("pay-bill-action-form");
+  });
+
+// user action:: cashout event handeler
+document
+  .getElementById("user-action-cashout")
+  .addEventListener("click", function (event) {
+    showElement("cashout-action-form");
+    hideElement("add-money-action-form");
+    hideElement("transfer-money-action-form");
+    hideElement("get-bonus-action-form");
+    hideElement("pay-bill-action-form");
+  });
