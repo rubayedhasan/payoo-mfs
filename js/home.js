@@ -140,3 +140,36 @@ document
       alert("Wrong user Account or Pin. Try Again Later..!");
     }
   });
+
+// submit button:: get bonus event handeler
+let bonusCount = 0;
+document
+  .getElementById("btn-get-bouns")
+  .addEventListener("click", function (event) {
+    // stop page reloading when submitting form
+    event.preventDefault();
+
+    const cuponCode = getInputFieldStrValue("input-enter-cupon");
+
+    if (cuponCode.toLowerCase() === "program25") {
+      //validation:: get bonus only one time
+      if (bonusCount >= 1) {
+        return alert("You have get bonus Once, not any more");
+      }
+
+      // get balance
+      const currentBalance = getCurrentBalance();
+      const bonus = 500;
+
+      // update balance and set it
+      const updatedBalanceAfterGettingBonus = currentBalance + bonus;
+      updateCurrentBalance(updatedBalanceAfterGettingBonus);
+
+      // reset input field
+      resetFieldValue("input-enter-cupon");
+
+      bonusCount++;
+    } else {
+      alert("Enter valid Cupon..!");
+    }
+  });

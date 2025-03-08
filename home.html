@@ -287,7 +287,7 @@
                </div>
 
               <!-- transfer money form -->
-               <div id="cashout-action-form" class="bg-slate-100 rounded-md p-5">
+               <div id="cashout-action-form" class="bg-slate-100 rounded-md p-5 hidden">
                 <h3 class="mb-4 font-semibold text-lg text-opacity-90">Transfer Money</h3>
                 <form class="fieldset p-5 bg-white rounded-lg">
                   <label class="fieldset-label">User Account Number</label>
@@ -322,6 +322,29 @@
                     class="btn btn-neutral mt-4"
                   >
                     Send Now
+                  </button>
+                </form>
+               </div>
+
+              <!-- get bonus form -->
+               <div id="cashout-action-form" class="bg-slate-100 rounded-md p-5">
+                <h3 class="mb-4 font-semibold text-lg text-opacity-90">Get Bonus</h3>
+                <form class="fieldset p-5 bg-white rounded-lg">
+                  <label class="fieldset-label">Enter Bonus Cupon</label>
+                  <input
+                    type="text"
+                    name=""
+                    autocomplete="off"
+                    id="input-enter-cupon"
+                    class="input"
+                    placeholder="Enter Your Cupon"
+                  />
+                  <button
+                    type="submit"
+                    id="btn-get-bouns"
+                    class="btn btn-neutral mt-4"
+                  >
+                    Get Bonus
                   </button>
                 </form>
                </div>
