@@ -173,3 +173,35 @@ document
       alert("Enter valid Cupon..!");
     }
   });
+
+// submit button:: pay bill event handeler
+document
+  .getElementById("btn-pay-bill")
+  .addEventListener("click", function (event) {
+    // stop page reloding on submitting form
+    event.preventDefault();
+
+    // get biller account number and pin number
+    const billerAccountNumber = getInputFieldStrValue(
+      "input-biller-account-number"
+    );
+    const billerPinNumber = getInputFieldStrValue("input-biller-account-pin");
+
+    // validation
+    if (billerAccountNumber === "1221" && billerPinNumber === "3456") {
+      // get balance
+      const currentBalance = getCurrentBalance();
+      const yourBill = getInputAmount("input-amount-to-pay");
+
+      // update alance and set it
+      const updatedBalanceAfterPayment = currentBalance - yourBill;
+      updateCurrentBalance(updatedBalanceAfterPayment);
+
+      // reset input field
+      resetFieldValue("input-biller-account-number");
+      resetFieldValue("input-biller-account-pin");
+      resetFieldValue("input-amount-to-pay");
+    } else {
+      alert("Wrong Account Number or Pin Number. Try Again Later.");
+    }
+  });

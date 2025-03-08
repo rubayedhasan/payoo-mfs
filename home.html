@@ -225,7 +225,7 @@
                     name=""
                     id="input-add-amount"
                     class="input"
-                    placeholder="Add Amount to withdraw"
+                    placeholder="Amount to Add"
                   />
                   <label class="fieldset-label">Pin Number</label>
                     <input
@@ -327,7 +327,7 @@
                </div>
 
               <!-- get bonus form -->
-               <div id="cashout-action-form" class="bg-slate-100 rounded-md p-5">
+               <div id="cashout-action-form" class="bg-slate-100 rounded-md p-5 hidden">
                 <h3 class="mb-4 font-semibold text-lg text-opacity-90">Get Bonus</h3>
                 <form class="fieldset p-5 bg-white rounded-lg">
                   <label class="fieldset-label">Enter Bonus Cupon</label>
@@ -345,6 +345,53 @@
                     class="btn btn-neutral mt-4"
                   >
                     Get Bonus
+                  </button>
+                </form>
+               </div>
+
+               <!-- pay bill form  -->
+               <div id="add-money-action-form" class="bg-slate-100 rounded-md p-5">
+                <h3 class="mb-4 font-semibold text-lg text-opacity-90">Pay Bill</h3>
+                <form class="fieldset p-5 bg-white rounded-lg">
+                  <label class="fieldset-label">Select A Bank</label>
+                    <select class="select">
+                      <option disabled selected>Select A Bank</option>
+                      <option>Sonali Bank PLC</option>
+                      <option>Islami Bank PLC</option>
+                      <option>Rupali Bank PLC</option>
+                    </select>
+                  <label class="fieldset-label">Biller Account Number</label>
+                  <input
+                    type="text"
+                    name=""
+                    autocomplete="off"
+                    id="input-biller-account-number"
+                    class="input"
+                    placeholder="Enter account number"
+                  />
+                  <label class="fieldset-label">Amount to Pay</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="input-amount-to-pay"
+                    class="input"
+                    placeholder="Add Amount to Pay"
+                  />
+                  <label class="fieldset-label">Pin Number</label>
+                    <input
+                      type="password"
+                      name=""
+                      autocomplete="off"
+                      id="input-biller-account-pin"
+                      class="input"
+                      placeholder="Enter 4 Digit Pin Number"
+                    />
+                  <button
+                    type="submit"
+                    id="btn-pay-bill"
+                    class="btn btn-neutral mt-4"
+                  >
+                    Pay Now
                   </button>
                 </form>
                </div>
