@@ -245,6 +245,46 @@
                   </button>
                 </form>
                </div>
+
+              <!-- cashout form -->
+               <div id="cashout-action-form" class="bg-slate-100 rounded-md p-5 hidden">
+                <h3 class="mb-4 font-semibold text-lg text-opacity-90">Cash Out</h3>
+                <form class="fieldset p-5 bg-white rounded-lg">
+                  <label class="fieldset-label">Agent Number</label>
+                  <input
+                    type="text"
+                    name=""
+                    autocomplete="off"
+                    id="input-agent-number"
+                    class="input"
+                    placeholder="Enter 11 digit account number"
+                  />
+                  <label class="fieldset-label">Amount</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="input-cashout-amount"
+                    class="input"
+                    placeholder="Add Amount to withdraw"
+                  />
+                  <label class="fieldset-label">Pin Number</label>
+                    <input
+                      type="password"
+                      name=""
+                      autocomplete="off"
+                      id="input-cashout-pin"
+                      class="input"
+                      placeholder="Enter 4 digit pin number"
+                    />
+                  <button
+                    type="submit"
+                    id="btn-cashout"
+                    class="btn btn-neutral mt-4"
+                  >
+                    Withdraw Money
+                  </button>
+                </form>
+               </div>
             </section>
 
             <!-- section::latest-payment -->
