@@ -67,8 +67,8 @@ document
       const addMoney = getInputAmount("input-add-amount");
 
       // upadate blance and set it
-      const updatedBalance = currentBalance + addMoney;
-      updateCurrentBalance(updatedBalance);
+      const updatedBalanceAfterAddMoney = currentBalance + addMoney;
+      updateCurrentBalance(updatedBalanceAfterAddMoney);
 
       // reset input field
       resetFieldValue("input-account-number");
@@ -80,28 +80,31 @@ document
   });
 
 // submit button:: cashout event handerler
-// document
-//   .getElementById("btn-cashout")
-//   .addEventListener("click", function (event) {
-//     // stop from reloading on submit
-//     event.preventDefault();
+document
+  .getElementById("btn-cashout")
+  .addEventListener("click", function (event) {
+    // stop from reloading on submit
+    event.preventDefault();
 
-//     // read account number and pin number element
-//     const agentNumber = document.getElementById("input-agent-number").value;
-//     const cashoutPin = document.getElementById("input-cashout-pin").value;
+    // get account number and pin number element
+    const agentNumber = getInputFieldStrValue("input-agent-number");
+    const cashoutPin = getInputFieldStrValue("input-cashout-pin");
 
-//     // read balance element
-//     const strCurrentBalance =
-//       document.getElementById("current-balance").innerText;
-//     const strWithdrawMoney = document.getElementById(
-//       "input-cashout-amount"
-//     ).value;
+    // validation
+    if (agentNumber === "1221" && cashoutPin === "3456") {
+      // get balance
+      const currentBalance = getCurrentBalance();
+      const cashoutMoney = getInputAmount("input-cashout-amount");
 
-//     // validation
-//     if (agentNumber === "1221" && cashoutPin === "3456") {
-//       // const
-//     } else {
-//       alert("Wrong Agent Number or Pin Number. Try Again Later");
-//     }
-//     console.log(cashoutPin);
-//   });
+      // update balance and set it
+      const updatedBalanceAfterCashout = currentBalance - cashoutMoney;
+      updateCurrentBalance(updatedBalanceAfterCashout);
+
+      // reset input field
+      resetFieldValue("input-agent-number");
+      resetFieldValue("input-cashout-pin");
+      resetFieldValue("input-cashout-amount");
+    } else {
+      alert("Wrong Agent Number or Pin Number. Try Again Later");
+    }
+  });
