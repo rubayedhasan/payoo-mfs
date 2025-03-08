@@ -108,3 +108,35 @@ document
       alert("Wrong Agent Number or Pin Number. Try Again Later");
     }
   });
+
+// submit button:: transfer money event handeler
+document
+  .getElementById("btn-transfer-Money")
+  .addEventListener("click", function (event) {
+    // stop page reloding on submitting form
+    event.preventDefault();
+
+    // get User Account Number & Pin Number
+    const userAccountNumber = getInputFieldStrValue(
+      "input-user-account-number"
+    );
+    const userPinNumber = getInputFieldStrValue("input-user-pin");
+
+    // validation
+    if (userAccountNumber === "1221" && userPinNumber === "3456") {
+      // get balance
+      const currentBalance = getCurrentBalance();
+      const amountOfTransferMoney = getInputAmount("input-transfer-amount");
+
+      // update balance and set it
+      const updateBalanceAterTransfer = currentBalance - amountOfTransferMoney;
+      updateCurrentBalance(updateBalanceAterTransfer);
+
+      // reset input field
+      resetFieldValue("input-user-account-number");
+      resetFieldValue("input-user-pin");
+      resetFieldValue("input-transfer-amount");
+    } else {
+      alert("Wrong user Account or Pin. Try Again Later..!");
+    }
+  });
