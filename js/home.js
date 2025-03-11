@@ -212,7 +212,13 @@ function showElement(targetElementId) {
 document
   .getElementById("user-action-add-money")
   .addEventListener("click", function (event) {
+    // show element
     showElement("add-money-action-form");
+    // scroll automaticly to show section
+    document
+      .getElementById("add-money-action-form")
+      .scrollIntoView({ behavior: "smooth" });
+
     hideElement("cashout-action-form");
     hideElement("transfer-money-action-form");
     hideElement("get-bonus-action-form");
@@ -224,6 +230,10 @@ document
   .getElementById("user-action-cashout")
   .addEventListener("click", function (event) {
     showElement("cashout-action-form");
+    document
+      .getElementById("cashout-action-form")
+      .scrollIntoView({ behavior: "smooth" });
+
     hideElement("add-money-action-form");
     hideElement("transfer-money-action-form");
     hideElement("get-bonus-action-form");
@@ -235,6 +245,9 @@ document
   .getElementById("user-action-transfer-money")
   .addEventListener("click", function (event) {
     showElement("transfer-money-action-form");
+    document
+      .getElementById("transfer-money-action-form")
+      .scrollIntoView({ behavior: "smooth" });
 
     hideElement("add-money-action-form");
     hideElement("cashout-action-form");
@@ -247,6 +260,9 @@ document
   .getElementById("user-action-get-bonus")
   .addEventListener("click", function (event) {
     showElement("get-bonus-action-form");
+    document
+      .getElementById("get-bonus-action-form")
+      .scrollIntoView({ behavior: "smooth" });
 
     hideElement("add-money-action-form");
     hideElement("cashout-action-form");
@@ -259,6 +275,9 @@ document
   .getElementById("user-action-pay-bill")
   .addEventListener("click", function (event) {
     showElement("pay-bill-action-form");
+    document
+      .getElementById("pay-bill-action-form")
+      .scrollIntoView({ behavior: "smooth" });
 
     hideElement("add-money-action-form");
     hideElement("cashout-action-form");
@@ -270,6 +289,9 @@ document
 document
   .getElementById("user-action-transactions")
   .addEventListener("click", function (event) {
+    document
+      .getElementById("latest-payment")
+      .scrollIntoView({ behavior: "smooth" });
     hideElement("cashout-action-form");
     hideElement("add-money-action-form");
     hideElement("transfer-money-action-form");
