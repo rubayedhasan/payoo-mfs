@@ -217,7 +217,7 @@ document
     // scroll automaticly to show section
     document
       .getElementById("add-money-action-form")
-      .scrollIntoView({ behavior: "smooth" });
+      .scrollIntoView({ block: "center", behavior: "smooth" });
 
     hideElement("cashout-action-form");
     hideElement("transfer-money-action-form");
@@ -232,7 +232,7 @@ document
     showElement("cashout-action-form");
     document
       .getElementById("cashout-action-form")
-      .scrollIntoView({ behavior: "smooth" });
+      .scrollIntoView({ block: "center", behavior: "smooth" });
 
     hideElement("add-money-action-form");
     hideElement("transfer-money-action-form");
@@ -247,7 +247,7 @@ document
     showElement("transfer-money-action-form");
     document
       .getElementById("transfer-money-action-form")
-      .scrollIntoView({ behavior: "smooth" });
+      .scrollIntoView({ block: "center", behavior: "smooth" });
 
     hideElement("add-money-action-form");
     hideElement("cashout-action-form");
@@ -262,7 +262,7 @@ document
     showElement("get-bonus-action-form");
     document
       .getElementById("get-bonus-action-form")
-      .scrollIntoView({ behavior: "smooth" });
+      .scrollIntoView({ block: "center", behavior: "smooth" });
 
     hideElement("add-money-action-form");
     hideElement("cashout-action-form");
@@ -277,7 +277,7 @@ document
     showElement("pay-bill-action-form");
     document
       .getElementById("pay-bill-action-form")
-      .scrollIntoView({ behavior: "smooth" });
+      .scrollIntoView({ block: "center", behavior: "smooth" });
 
     hideElement("add-money-action-form");
     hideElement("cashout-action-form");
@@ -291,7 +291,7 @@ document
   .addEventListener("click", function (event) {
     document
       .getElementById("latest-payment")
-      .scrollIntoView({ behavior: "smooth" });
+      .scrollIntoView({ block: "center", behavior: "smooth" });
     hideElement("cashout-action-form");
     hideElement("add-money-action-form");
     hideElement("transfer-money-action-form");
